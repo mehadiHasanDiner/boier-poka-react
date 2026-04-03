@@ -4,9 +4,9 @@ import Book from "../Book/Book";
 
 const Books = () => {
   const booksData = useLoaderData();
+  console.log(booksData);
   const books = booksData || [];
 
-  // console.log(booksData);
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {books?.map((book) => (
